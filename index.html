@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hoteles, reservar hoteles, paisajes, galeria de hoteles, viajes en familia">
+    <meta name="author" content="Gonzalo Ocampo">
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Falucho</title>
+  </head>
+  <body>
+
+   <!-----Navbard----->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Falucho</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./comentarios.html">Comentarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+         
+        </ul>
+        <a href="registro.html" class="btn btn-success">Registro</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        <div class="carousel-item text-center bg-cover vh-100 active slide-1">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h6 class="text-white">Bienvenido a Falucho</h6>
+                        <h1 class="display-1 my-3 fw-bold text-white">Los mejores hoteles</h1>
+                        <a href="#" class="btn btn-brand ">Reserva</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item text-center bg-cover vh-100 slide-2">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h6 class="text-white">Bienvenido a Falucho</h6>
+                        <h1 class="display-1 my-3 fw-bold text-white">Precios convenientes</h1>
+                        <a href="#" class="btn btn-brand ">Reserva</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="carousel-item text-center bg-cover vh-100 slide-3">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h6 class="text-white">Bienvenido a Falucho</h6>
+                        <h1 class="display-1 my-3 fw-bold text-white">Buenos servicios</h1>
+                        <a href="#" class="btn btn-brand ">Reserva</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!----- Acerca de----->
+
+<section id="acerca-de">
+    <div class="container">
+        <div class="row gy-4 align-items-center">
+            <div class="col-lg-5">
+                <img src="/img/sobre-nosotros.jpg" alt="imagen de tres trabajadores">
+            </div>
+            <div class="col-lg-5">
+                <h1>Sobre nosotros</h1>
+                <div class="divide my-4"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ipsa illum ut sunt, quibusdam cupiditate.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, officiis dolores. Praesentium explicabo corporis numquam odit culpa, veniam nisi asperiores.</p>
+                <a href="#menu" class="btn btn-brand">Explora el menu</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----------MENU----------->
+
+<section id="menu" class="bg-light">
+  <div class="container">
+     <div class="row">
+      <div class="col-12 texto-intro">
+         <h1>Explora nuestros hoteles</h1>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo expedita beatae inventore quibusdam aliquam ratione accusamus?</p>
+      </div>
+     </div>
+
+  </div>
+  <div class="container">
+
+  <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link " id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">Todos</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-cinco-estrellas-tab" data-bs-toggle="pill" data-bs-target="#pills-cinco-estrellas" type="button" role="tab" aria-controls="pills-cinco-estrellas" aria-selected="true">Cinco estrellas</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <button class="nav-link " id="pills-cuatro-estrellas-tab" data-bs-toggle="pill" data-bs-target="#pills-cuatro-estrellas" type="button" role="tab" aria-controls="pills-cuatro-estrellas" aria-selected="true">Cuatro estrellas</button>
+    </li>
+   
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="menu-item bg-white shadow-on-hover">
+            <img src="./img/caravelle-hotel.jpg" alt="imagen de la fachada caravelle hotel">
+            <div class="menu-item-contenido p-4">
+              <div>
+                <span> Estrellas</span>
+                <span class="estrellas-span">
+                   <i class="ri-star-fill"></i>
+                   <i class="ri-star-fill"></i>
+                   <i class="ri-star-fill"></i>
+                   <i class="ri-star-fill"></i>
+                   <i class="ri-star-fill"></i>
+                 </span>
+                </div>
+                 <h5 class="mt-1 mb-2"><a href="#">Caravelle Hotel</a> </h5>
+                 <p class="small">Hotel que cuenta con muchas comodidades, entre ellas piscina, Spa y cercania a la playa.</p>
+                
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="menu-item bg-white shadow-on-hover">
+              <img src="./img/hotel1.jpg" alt="Paisaje junto habitacion en el exterior">
+              <div class="menu-item-contenido p-4">
+                <div>
+                  <span> Estrellas</span>
+                  <span class="estrellas-span">
+                     <i class="ri-star-fill"></i>
+                     <i class="ri-star-fill"></i>
+                     <i class="ri-star-fill"></i>
+                     <i class="ri-star-fill"></i>
+                     <i class="ri-star-fill"></i>
+                   </span>
+                  </div>
+                   <h5 class="mt-1 mb-2"><a href="#">Walensee, Switzerland</a> </h5>
+                   <p class="small">Hotel que dispone de habitaciones en el exterior, podrá disfrutar de esto y más.</p>
+                  
+                </div>
+  
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./img/hotel2.jpg" alt="imagen del frente del hotel en costa rica">
+                <div class="menu-item-contenido p-4">
+                  <div>
+                    <span> Estrellas</span>
+                    <span class="estrellas-span">
+                       <i class="ri-star-fill"></i>
+                       <i class="ri-star-fill"></i>
+                       <i class="ri-star-fill"></i>
+                       <i class="ri-star-fill"></i>
+                       <i class="ri-star-fill"></i>
+                     </span>
+                    </div>
+                     <h5 class="mt-1 mb-2"><a href="#">Las Catalinas, Costa rica</a> </h5>
+                     <p class="small">Hotel que se encuentra frente al mar, tiene ciento de comodidades y puede disfrutar de la pesca del día.</p>
+                    
+                  </div>
+    
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="./img/hotel3.jpg" alt="imagen de playa situada en Cancún">
+                  <div class="menu-item-contenido p-4">
+                    <div>
+                      <span> Estrellas</span>
+                      <span class="estrellas-span">
+                         <i class="ri-star-fill"></i>
+                         <i class="ri-star-fill"></i>
+                         <i class="ri-star-fill"></i>
+                         <i class="ri-star-fill"></i>
+                         <i class="ri-star-fill"></i>
+                       </span>
+                      </div>
+                       <h5 class="mt-1 mb-2"><a href="#">Cancún, Mexico</a> </h5>
+                       <p class="small">Hotel que cuenta con muchas comodidades, entre ellas piscina, Spa y cercania a la playa</p>
+                      
+                    </div>
+      
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./img/aonang-thailand.jpg" alt="imagen de las piscinas en Ao Nang, thailand">
+                    <div class="menu-item-contenido p-4">
+                      <div>
+                        <span> Estrellas</span>
+                        <span class="estrellas-span">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                         </span>
+                        </div>
+                         <h5 class="mt-1 mb-2"><a href="#">Ao Nang,Thailand </a> </h5>
+                         <p class="small">Hotel que dispone de hermosas piscinas climatizadas, jacuzzi y un clima hermoso para disfrutar en familia.</p>
+                        
+                      </div>
+        
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./img/oia-greece.jpg" alt="imagen de muy bello paisaje en Oia, Greece">
+                      <div class="menu-item-contenido p-4">
+                        <div>
+                          <span> Estrellas</span>
+                          <span class="estrellas-span">
+                             <i class="ri-star-fill"></i>
+                             <i class="ri-star-fill"></i>
+                             <i class="ri-star-fill"></i>
+                             <i class="ri-star-fill"></i>
+                             <i class="ri-star-fill"></i>
+                           </span>
+                          </div>
+                           <h5 class="mt-1 mb-2"><a href="#">Oia, Greece</a> </h5>
+                           <p class="small">Hotel que cuenta con una de las mejores vistas en el mundo, en el cual podrá relajarse y pasarla bien.</p>
+                          
+                        </div>
+          
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="menu-item bg-white shadow-on-hover">
+                        <img src="./img/vietnam-hotel.jpg" alt="imagen de la entrada del hotel, situado en vietnam">
+                        <div class="menu-item-contenido p-4">
+                          <div>
+                            <span> Estrellas</span>
+                            <span class="estrellas-span">
+                               <i class="ri-star-fill"></i>
+                               <i class="ri-star-fill"></i>
+                               <i class="ri-star-fill"></i>
+                               <i class="ri-star-fill"></i>
+                               <i class="ri-star-fill"></i>
+                             </span>
+                            </div>
+                             <h5 class="mt-1 mb-2"><a href="#">Cần Thơ, Vietnam</a> </h5>
+                             <p class="small">Hotel que tiene una de las mejores entradas, aqui podrá realizar excursiónes y conocer esta linda ciudad.</p>
+                            
+                          </div>
+            
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-sm-6">
+                        <div class="menu-item bg-white shadow-on-hover">
+                          <img src="./img/australia.jpg" alt="imagen de la playa junto al hotel en Sydney, australia">
+                          <div class="menu-item-contenido p-4">
+                            <div>
+                              <span> Estrellas</span>
+                              <span class="estrellas-span">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                               </span>
+                              </div>
+                               <h5 class="mt-1 mb-2"><a href="#">Sydney, Australia</a> </h5>
+                               <p class="small">Hotel situado en una de las más lindas playas a excasos metros de ella.</p>
+                              
+                            </div>
+              
+                          </div>
+                        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show " id="pills-cinco-estrellas" role="tabpanel" aria-labelledby="pills-cinco-estrellas-tab">
+           <div class="row gy-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="menu-item bg-white shadow-on-hover">
+            <img src="./img/caravelle-hotel.jpg" alt="imagen de la fachada caravelle hotel">
+            <div class="menu-item-contenido p-4">
+              <div>
+                <span> Estrellas</span>
+                <span class="estrellas-span">
+                   <i class="ri-star-fill"></i>
+                   <i class="ri-star-fill"></i>
+                   <i class="ri-star-fill"></i>
+                   <i class="ri-star-fill"></i>
+                   <i class="ri-star-fill"></i>
+                 </span>
+                </div>
+                 <h5 class="mt-1 mb-2"><a href="#">Caravelle Hotel</a> </h5>
+                 <p class="small">Hotel que cuenta con muchas comodidades, entre ellas piscina, Spa y cercania a la playa.</p>
+                
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="menu-item bg-white shadow-on-hover">
+              <img src="./img/hotel1.jpg" alt="Paisaje junto habitacion en el exterior">
+              <div class="menu-item-contenido p-4">
+                <div>
+                  <span> Estrellas</span>
+                  <span class="estrellas-span">
+                     <i class="ri-star-fill"></i>
+                     <i class="ri-star-fill"></i>
+                     <i class="ri-star-fill"></i>
+                     <i class="ri-star-fill"></i>
+                     <i class="ri-star-fill"></i>
+                   </span>
+                  </div>
+                   <h5 class="mt-1 mb-2"><a href="#">Walensee, Switzerland</a> </h5>
+                   <p class="small">Hotel que dispone de habitaciones en el exterior, podrá disfrutar de esto y más.</p>
+                  
+                </div>
+  
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="menu-item bg-white shadow-on-hover">
+                <img src="./img/hotel2.jpg" alt="imagen del frente del hotel en costa rica">
+                <div class="menu-item-contenido p-4">
+                  <div>
+                    <span> Estrellas</span>
+                    <span class="estrellas-span">
+                       <i class="ri-star-fill"></i>
+                       <i class="ri-star-fill"></i>
+                       <i class="ri-star-fill"></i>
+                       <i class="ri-star-fill"></i>
+                       <i class="ri-star-fill"></i>
+                     </span>
+                    </div>
+                     <h5 class="mt-1 mb-2"><a href="#">Las Catalinas, Costa rica</a> </h5>
+                     <p class="small">Hotel que se encuentra frente al mar, tiene ciento de comodidades y puede disfrutar de la pesca del día.</p>
+                    
+                  </div>
+    
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="./img/hotel3.jpg" alt="imagen de playa situada en Cancún">
+                  <div class="menu-item-contenido p-4">
+                    <div>
+                      <span> Estrellas</span>
+                      <span class="estrellas-span">
+                         <i class="ri-star-fill"></i>
+                         <i class="ri-star-fill"></i>
+                         <i class="ri-star-fill"></i>
+                         <i class="ri-star-fill"></i>
+                         <i class="ri-star-fill"></i>
+                       </span>
+                      </div>
+                       <h5 class="mt-1 mb-2"><a href="#">Cancún, Mexico</a> </h5>
+                       <p class="small">Hotel que cuenta con muchas comodidades, entre ellas piscina, Spa y cercania a la playa</p>
+                      
+                    </div>
+      
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="menu-item bg-white shadow-on-hover">
+                    <img src="./img/aonang-thailand.jpg" alt="imagen de las piscinas en Ao Nang, thailand">
+                    <div class="menu-item-contenido p-4">
+                      <div>
+                        <span> Estrellas</span>
+                        <span class="estrellas-span">
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                           <i class="ri-star-fill"></i>
+                         </span>
+                        </div>
+                         <h5 class="mt-1 mb-2"><a href="#">Ao Nang,Thailand </a> </h5>
+                         <p class="small">Hotel que dispone de hermosas piscinas climatizadas, jacuzzi y un clima hermoso para disfrutar en familia.</p>
+                        
+                      </div>
+        
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="menu-item bg-white shadow-on-hover">
+                      <img src="./img/oia-greece.jpg" alt="imagen de muy bello paisaje en Oia, Greece">
+                      <div class="menu-item-contenido p-4">
+                        <div>
+                          <span> Estrellas</span>
+                          <span class="estrellas-span">
+                             <i class="ri-star-fill"></i>
+                             <i class="ri-star-fill"></i>
+                             <i class="ri-star-fill"></i>
+                             <i class="ri-star-fill"></i>
+                             <i class="ri-star-fill"></i>
+                           </span>
+                          </div>
+                           <h5 class="mt-1 mb-2"><a href="#">Oia, Greece</a> </h5>
+                           <p class="small">Hotel que cuenta con una de las mejores vistas en el mundo, en el cual podrá relajarse y pasarla bien.</p>
+                          
+                        </div>
+          
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="menu-item bg-white shadow-on-hover">
+                        <img src="./img/vietnam-hotel.jpg" alt="imagen de la entrada del hotel, situado en vietnam">
+                        <div class="menu-item-contenido p-4">
+                          <div>
+                            <span> Estrellas</span>
+                            <span class="estrellas-span">
+                               <i class="ri-star-fill"></i>
+                               <i class="ri-star-fill"></i>
+                               <i class="ri-star-fill"></i>
+                               <i class="ri-star-fill"></i>
+                               <i class="ri-star-fill"></i>
+                             </span>
+                            </div>
+                             <h5 class="mt-1 mb-2"><a href="#">Cần Thơ, Vietnam</a> </h5>
+                             <p class="small">Hotel que tiene una de las mejores entradas, aqui podrá realizar excursiónes y conocer esta linda ciudad.</p>
+                            
+                          </div>
+            
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-sm-6">
+                        <div class="menu-item bg-white shadow-on-hover">
+                          <img src="./img/australia.jpg" alt="imagen de la playa junto al hotel en Sydney, australia">
+                          <div class="menu-item-contenido p-4">
+                            <div>
+                              <span> Estrellas</span>
+                              <span class="estrellas-span">
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                                 <i class="ri-star-fill"></i>
+                               </span>
+                              </div>
+                               <h5 class="mt-1 mb-2"><a href="#">Sydney, Australia</a> </h5>
+                               <p class="small">Hotel situado en una de las más lindas playas a excasos metros de ella.</p>
+                              
+                            </div>
+              
+                          </div>
+                        </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade show " id="pills-cuatro-estrellas" role="tabpanel" aria-labelledby="pills-cuatro-estrellas-tab">
+        
+      </div>
+     </div>
+
+    </div>
+
+
+</section>
+
+<!---------FOOTER--------->
+
+<footer class="bg-cover">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Falucho</h4>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, harum!</p>
+          <div class="social-links">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></i></a>
+          </div>
+
+        </div>
+        <div class="col-lg-3 ms-auto">
+          <h6 class="texto-blanco mb-4">CONTACTO</h6>
+          <p class="mb-1">Tel:(598) 2223 3431</p>
+          <p class="mb-1">Email: empresafalucho@hotmail.com</p>
+          <p class="mb-0">Direc: Avenida costa azul y ruta 10</p>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="texto-blanco mb-4">HORARIOS</h6>
+          <p class="mb-1">Lunes-viernes:07:00 - 21:00</p>
+          <p>Sabados-domingos: 09:00 - 18:00</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-auto">
+        <p class="mb-0">Todos los derechos reservados</p>
+      </div>
+      <div class="col-auto">
+        <p class="mb-0">Diseñado por <a href="#">Gonzalo Ocampo</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
